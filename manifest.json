@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "No spoilers",
+	"version": "1.0",
+
+	"description": "Removes spoilers",
+
+	"icons": {
+		"48": "image.png"
+	},
+
+	"browser_action": {
+		"default_popup": "/index.html",
+		"default_icon": {
+			"48": "image.png"
+		},
+		"browser_style": true
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/*"],
+			"js": ["index.js"]
+		}
+	],
+
+	"permissions": ["*://*.youtube.com/*", "storage", "unlimitedStorage", "activeTab"]
+}
