@@ -19,10 +19,12 @@
 
 	"content_scripts": [
 		{
-			"matches": ["*://*.youtube.com/*"],
+			"matches": ["https://www.youtube.com/*"],
 			"js": ["index.js"]
 		}
 	],
 
-	"permissions": ["*://*.youtube.com/*", "storage", "unlimitedStorage", "activeTab"]
+	"permissions": ["*://*.youtube.com/*", "storage", "unlimitedStorage", "activeTab"],
+
+	"web_accessible_resources": ["index.html", "index.js"]
 }
