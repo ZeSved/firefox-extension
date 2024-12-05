@@ -7,3 +7,8 @@ body {
   width: 100px;
   height: 100px;
 }
+
+iframe {
+  width: 20px;
+  height: 20px;
+}

@@ -6,11 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
+  <script>
+    function onLoad(e) {
+      localStorage.setItem('testt', JSON.stringify(e))
+    }
+  </script>
 </head>
 
 <body>
   <div>
     <a href="https://developer.mozilla.org/en-US/docs/Web/API">click me</a>
+    <!-- <iframe src="http://localhost:5173/" frameborder="0" onload="onLoad()"></iframe> -->
   </div>
 </body>
 
