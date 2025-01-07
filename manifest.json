@@ -20,11 +20,11 @@
 	"content_scripts": [
 		{
 			"matches": ["https://www.youtube.com/*"],
-			"js": ["index.js"]
+			"js": ["d.js", "index.js"]
 		}
 	],
 
-	"permissions": ["*://*.youtube.com/*", "storage", "unlimitedStorage", "activeTab"],
+	"permissions": ["*://*.youtube.com/*", "storage", "tabs"],
 
 	"web_accessible_resources": ["index.html", "index.js"]
 }
