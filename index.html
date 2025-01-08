@@ -5,23 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="d.js"></script>
-  <script type="module" src="test.js" defer></script>
-  <!-- <script>var exports = {};</script> -->
+  <script type="module" src="popup.js" defer></script>
   <title>Document</title>
-  <!-- <script>
-    function onLoad(e) {
-      localStorage.setItem('testt', JSON.stringify(e))
-    }
-  </script> -->
 </head>
 
 <body>
-  <div>
-    <input id="in" type="text" placeholder="words...">
-    <button id="bt">Add</button>
+  <div id="wrapper">
+    <section id="inputBox">
+      <input id="words" type="text" placeholder="words...">
+      <!-- <select id="options" name="" id="">
+        <option value="title">Title</option>
+        <option value="youtuber">Youtuber</option>
+      </select> -->
+      <button id="add">Add</button>
+      <button id="clear">Clear</button>
+    </section>
+    <section id="spoilerList"></section>
   </div>
-  <!-- <script type="module" src="test.js"></script> -->
 </body>
 
 </html>
